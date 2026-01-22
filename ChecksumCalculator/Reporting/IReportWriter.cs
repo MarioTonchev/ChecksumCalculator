@@ -2,8 +2,8 @@
 
 namespace ChecksumCalculator.Reporting
 {
-	internal interface IReportWriter
+	public interface IReportWriter
 	{
-		void Write(ChecksumResult result);
+		void Write(IEnumerable<ChecksumResult> results, TextWriter output);
 	}
 }

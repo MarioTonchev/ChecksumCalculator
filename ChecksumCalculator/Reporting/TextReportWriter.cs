@@ -2,11 +2,14 @@
 
 namespace ChecksumCalculator.Reporting
 {
-	internal class TextReportWriter : IReportWriter
+	public class TextReportWriter : IReportWriter
 	{
-		public void Write(ChecksumResult result)
+		public void Write(IEnumerable<ChecksumResult> results, TextWriter output)
 		{
-			Console.WriteLine($"{result.Checksum} *{result.Path}");
+			foreach (ChecksumResult result in results)
+			{
+				output.WriteLine($"{result.Checksum} *{result.Path}");
+			}
 		}
 	}
 }
