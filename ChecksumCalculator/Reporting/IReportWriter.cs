@@ -1,4 +1,4 @@
-﻿using ChecksumCalculator.Model;
+﻿using ChecksumCalculator.Visitor;
 
 namespace ChecksumCalculator.Reporting
 {

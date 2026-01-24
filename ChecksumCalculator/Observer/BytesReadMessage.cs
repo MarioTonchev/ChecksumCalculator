@@ -1,4 +1,4 @@
-﻿namespace ChecksumCalculator.Models
+﻿namespace ChecksumCalculator.Observer
 {
 	public class BytesReadMessage
 	{

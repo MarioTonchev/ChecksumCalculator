@@ -1,6 +1,5 @@
 ﻿using ChecksumCalculator.Builder;
 using ChecksumCalculator.Factory;
-using ChecksumCalculator.Models;
 using ChecksumCalculator.Observer;
 using ChecksumCalculator.PauseResume;
 using ChecksumCalculator.Verification;

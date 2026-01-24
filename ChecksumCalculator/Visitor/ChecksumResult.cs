@@ -1,4 +1,4 @@
-﻿namespace ChecksumCalculator.Model
+﻿namespace ChecksumCalculator.Visitor
 {
 	public class ChecksumResult
 	{

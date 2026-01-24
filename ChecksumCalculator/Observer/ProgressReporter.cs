@@ -1,5 +1,4 @@
-﻿using ChecksumCalculator.Models;
-using ChecksumCalculator.PauseResume;
+﻿using ChecksumCalculator.PauseResume;
 using System.Diagnostics;
 
 namespace ChecksumCalculator.Observer

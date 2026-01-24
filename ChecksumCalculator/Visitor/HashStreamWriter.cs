@@ -1,7 +1,5 @@
 ﻿using ChecksumCalculator.Composite;
 using ChecksumCalculator.Hashing;
-using ChecksumCalculator.Model;
-using ChecksumCalculator.Models;
 using ChecksumCalculator.Observer;
 using ChecksumCalculator.PauseResume;
 

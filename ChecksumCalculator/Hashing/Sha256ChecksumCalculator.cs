@@ -1,4 +1,4 @@
-﻿using ChecksumCalculator.Models;
+﻿using ChecksumCalculator.Observer;
 using ChecksumCalculator.PauseResume;
 using System.Security.Cryptography;
 
