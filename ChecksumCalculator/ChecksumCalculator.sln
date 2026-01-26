@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChecksumCalculator", "ChecksumCalculator.csproj", "{F251AE48-AB1A-4084-BE94-7B8C6D9D09C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChecksumCalculator.Tests", "..\ChecksumCalculator.Tests\ChecksumCalculator.Tests.csproj", "{A7993180-399C-4B50-BF9E-0865EE76FB41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F251AE48-AB1A-4084-BE94-7B8C6D9D09C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F251AE48-AB1A-4084-BE94-7B8C6D9D09C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F251AE48-AB1A-4084-BE94-7B8C6D9D09C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7993180-399C-4B50-BF9E-0865EE76FB41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7993180-399C-4B50-BF9E-0865EE76FB41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7993180-399C-4B50-BF9E-0865EE76FB41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7993180-399C-4B50-BF9E-0865EE76FB41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
