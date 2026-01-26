@@ -41,10 +41,10 @@ namespace ChecksumCalculator.Observer
 			}
 			else if (message is BytesReadMessage bytesMessage)
 			{
-				long delta = bytesMessage.BytesRead - currentFileBytesRead;
+				long newlyReadBytes = bytesMessage.BytesRead - currentFileBytesRead;
 
 				currentFileBytesRead = bytesMessage.BytesRead;
-				totalBytesRead += delta;
+				totalBytesRead += newlyReadBytes;
 			}
 			else
 			{
