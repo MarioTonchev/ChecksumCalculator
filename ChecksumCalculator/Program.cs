@@ -66,9 +66,16 @@ class Program
             var results = new List<ChecksumResult>();
 
             var hasher = new HashStreamWriter(calculator, results, pauseController);
-
             var progressReporter = new ProgressReporter(root.Size, pauseController);
             hasher.RegisterObserver(progressReporter);
+            var reportWriter = ReportWriterFactory.Create(format);
+
+            Dictionary<string, string>? givenChecksums = null;
+
+            if (checksumsFile != null)
+            {
+                givenChecksums = ChecksumFileParser.Parse(checksumsFile);
+            }
 
             var worker = new Thread(() =>
             {
@@ -76,11 +83,9 @@ class Program
 
                 Console.WriteLine("\nScan finished.");
 
-                if (checksumsFile != null)
+                if (givenChecksums != null)
                 {
-                    var givenChecksum = ChecksumFileParser.Parse(checksumsFile);
-
-                    var verificationResults = Verifier.Verify(results, givenChecksum);
+                    var verificationResults = Verifier.Verify(results, givenChecksums);
 
                     foreach (var verificationResult in verificationResults)
                     {
@@ -90,8 +95,7 @@ class Program
                     return;
                 }
 
-                var writer = ReportWriterFactory.Create(format);
-                writer.Write(results, Console.Out);
+                reportWriter.Write(results, Console.Out);
             });
 
             worker.Start();
