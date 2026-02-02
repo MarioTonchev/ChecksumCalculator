@@ -12,7 +12,8 @@ namespace ChecksumCalculator.Factory
 					return new TextReportWriter();
 				case "json":
 					return new JsonReportWriter();
-				default:throw new ArgumentException($"Unsupported report format: {format}");
+				default:
+					throw new ArgumentException($"Unsupported report format: {format}");
 			}
 		}
 	}
